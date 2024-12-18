@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOCUMENT </title>
+</head>
+<body>
+    <H1> CHAI AUR JAVASCRIPT </H1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+   let sayDate;
+   const startChangingColor =  function(){  
+     sayDate = setInterval(prem,1000)
+  function prem(){
+    console.log('prem', Date.now())
+  }
+};
+
+   
+const stopChangingColor = function(){
+    clearInterval(sayDate)
+    sayDate =  null;
+}
+    
+     document.querySelector('#start').addEventListener('click', startChangingColor)
+
+    document.querySelector('#stop').addEventListener('click', stopChangingColor)
+
+  
+    
+
+    // const intervalId =  setInteval(sayDate , 5000, "hi")
+    // clear.Interval(intervalId)
+</script>
+</html>
